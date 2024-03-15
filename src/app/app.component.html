@@ -376,19 +376,19 @@
   <input type="hidden" #selection>
 
   <div class="card-container">
-    <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'Transmission'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>实践报告：第一章</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'Queuing'" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
       <span>TBD</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-      <span>TBD</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'Message'" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
       <span>TBD</span>
@@ -400,9 +400,23 @@
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>To be determined</pre>
-      <pre *ngSwitchCase="'material'">To be determined</pre>
-      <pre *ngSwitchCase="'pwa'">To be determined</pre>
-      <pre *ngSwitchCase="'dependency'">To be determined</pre>
+      <pre *ngSwitchCase="'Transmission'">
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/message-segmentation/index.html">Message Segmentation</a>
+        实践如下三个实验：
+        <br/>
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/transmission-vs-propogation-delay/transmission-propagation-delay-ch1/index.html">Transmission versus Propagation Delay</a>
+        <br/>
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/queuing-loss-applet/index.html">Queuing and Loss Interactive Animation</a>
+        <br/>
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/message-segmentation/index.html">Message Segmentation</a>
+        <br/>
+        撰写实践报告（
+        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/doc/DYlF1RVZjREhFZUlz">格式要求</a>
+        ），<a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYmpNbGdyRk1GRk5l">在线提交</a>
+        
+      </pre>
+      <pre *ngSwitchCase="'Queuing'">To be determined</pre>
+      <pre *ngSwitchCase="'Message'">To be determined</pre>
       <pre *ngSwitchCase="'test'">To be determined</pre>
       <pre *ngSwitchCase="'build'">To be determined</pre>
   </div>
