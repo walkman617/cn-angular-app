@@ -100,7 +100,7 @@
     border: 1px solid #eee;
     background-color: #fafafa;
     height: 32px;
-    width: 280px;
+    width: 300px;
     margin: 0 8px 12px;
     padding: 12px;
     display: flex;
@@ -117,7 +117,7 @@
 
   .card.card-small {
     height: 16px;
-    width: 180px;
+    width: 200px;
   }
 
   .card-container .card:not(.highlight-card) {
@@ -175,8 +175,8 @@
 
   .terminal {
     position: relative;
-    width: 80%;
-    max-width: 360px;
+    width: 85%;
+    max-width: 400px;
     border-radius: 6px;
     padding-top: 45px;
     margin-top: 8px;
@@ -380,11 +380,11 @@
       <span>Chapter 1 (Before April 1, 2024)</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'Queuing'" tabindex="0">
-      <span>Chapter 2</span>
+    <div class="card card-small" (click)="selection.value = 'ApplicationLayer'" tabindex="0">
+      <span>Chapter 2 (Before April 15, 2024)</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'Message'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'TransportLayer'" tabindex="0">
       <span>Chapter 3</span>
     </div>
 
@@ -401,11 +401,20 @@
         <br/>
         Practice Report: 
         <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/doc/DYlF1RVZjREhFZUlz">格式要求</a>
-        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYmpNbGdyRk1GRk5l">在线提交</a>
+        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYmpNbGdyRk1GRk5l">在线提交（第1章）</a>
         
       </pre>
-      <pre *ngSwitchCase="'Queuing'">To be determined</pre>
-      <pre *ngSwitchCase="'Message'">To be determined</pre>
+      <pre *ngSwitchCase="'ApplicationLayer'">To be determined
+        Chapter 2：Application Layer
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/http-delay-estimation/index.html">HTTP Delay Estimation</a>
+        <a class="card" target="_blank" rel="noopener" href="https://media.pearsoncmg.com/ph/esm/ecs_kurose_compnetwork_8/cw/content/interactiveanimations/recursive-iterative-queries-in-dns/index.html">Recursive/Iterative Queries in DNS</a>
+        <br/>
+        Practice Report: 
+        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/doc/DYlF1RVZjREhFZUlz">格式要求</a>
+        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYlR4TVhyWXdnZXBR">在线提交（第2章）</a>
+       
+      </pre>
+      <pre *ngSwitchCase="'TransportLayer'">To be determined</pre>
       <pre *ngSwitchCase="'test'">To be determined</pre>
       <pre *ngSwitchCase="'build'">To be determined</pre>
   </div>
